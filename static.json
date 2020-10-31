@@ -1,7 +1,8 @@
 {
 "headers": {
   "/*": {
-      "X-Author": "arina_sp"
+      "X-Author": "arina_sp",
+      "Access-Control-Allow-Origin": "*"
     }
   }
 }
