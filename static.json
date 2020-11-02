@@ -4,7 +4,10 @@
       "X-Author": "arina_sp",
       "Access-Control-Allow-Origin": "*",
       "Content-Type": "text/plain; charset=UTF-8",
-      "https_only": true
     }
   }
+}
+{
+  "clean_urls": false,
+  "https_only": true
 }
