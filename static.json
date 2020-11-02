@@ -1,4 +1,5 @@
 {
+"https_only": true,
 "headers": {
   "/**": {
       "X-Author": "arina_sp",
