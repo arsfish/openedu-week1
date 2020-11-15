@@ -4,14 +4,21 @@
   <input type="text" id="inp">
   <button id="bt">click</button>
   <script>
-    document.getElementById("bt").addEventListener("click", async () => {
-      const url = document.getElementById("inp").value;
-      await fetch(url) 
-        .then((res) => {
-          res.text().then(function (text) {
-            document.getElementById("inp").value = text; }
-            }
-    }
+    const listener = () => {
+			const button = document.getElementById('bt');
+			button.addEventListener('click', () => {
+				const input = document.getElementById('inp');
+				const { value } = input;
+				fetch(value)
+					.then((data) => {
+						data.text().then((v) => {
+							input.value = v;
+						});
+					})
+					.catch((e) => console.log(e))
+			});
+		};
+		listener();
   </script>
 </body>
 </html>
