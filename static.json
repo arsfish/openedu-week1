@@ -3,7 +3,7 @@
 "headers": {
   "/**": {
       "X-Author": "arina_sp",
-      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Origin": "*"
     },
   "/***": {
       "X-Author": "arina_sp",
