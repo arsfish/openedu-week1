@@ -8,6 +8,10 @@
   "/***": {
       "X-Author": "arina_sp",
       "Access-Control-Allow-Origin": "*"
+    },
+  "/*": {
+      "X-Author": "arina_sp",
+      "Access-Control-Allow-Origin": "*"
     }
   }
 }
