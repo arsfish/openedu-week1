@@ -1,7 +1,7 @@
 {
 "https_only": true,
 "headers": {
-  "/****": {
+  "/***": {
       "X-Author": "arina_sp",
       "Access-Control-Allow-Origin": "*",
       "Content-Type": "text/plain; charset=UTF-8"
