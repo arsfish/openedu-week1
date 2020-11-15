@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <input type="text" id="inp">
+  <button id="bt">click</button>
+  <script>
+    document.getElementById("bt").addEventListener("click", async () => {
+      const url = document.getElementById("inp").value;
+      await fetch(url) 
+        .then((res) => {
+          res.text().then(function (text) {
+            document.getElementById("inp").value = text; }
+            }
+    }
+  </script>
+</body>
+</html>
