@@ -2,16 +2,20 @@
 <html lang="en">
 <body>
   <input type="text" id="inp">
-  <button id="bt">click</button>
+  <button id="bt" onclick="getClick()">click</button>
   <script>
-    document.getElementById("bt").addEventListener("click", async () => {
-      const url = document.getElementById("inp").value;
-      await fetch(url) 
-        .then((res) => {
-          res.text().then(function (text) {
-            document.getElementById("inp").value = text; }
-            }
-    }
+    async function getClick() {
+
+		let adress = document.getElementById("inp").value;
+
+		await fetch(adress)
+			.then((response) => {
+				response.text().then(function (text) {
+					document.getElementById("inp").value = text;
+				}
+				);
+			})
+	}
   </script>
 </body>
 </html>
