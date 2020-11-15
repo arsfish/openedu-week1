@@ -1,3 +1,1 @@
-function task(x) { 
-  const checkAge = (count) = new Promise((res, rej) => (count < 18 ? res('yes') : rej ('no')));
-  return checkAge(x); }
+function task(x){ return new Promise((res, rej) => x < 18 ? res('yes') : rej('no')); }
