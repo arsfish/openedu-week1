@@ -1,4 +1,5 @@
-require('http')
+const http = require('http');
+http
 .Server((req, res) => {
 	if (req.url === '/result4/' && req.method ===
 		'POST') {
